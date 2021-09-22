@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+i=1
+h=0
+echo hour: $h
+while [ $i -lt 60 ] && [ $h -lt 12 ]
+do
+echo $i
+((i++))
+if [ $i -eq 60 ]
+then
+    i=$(($i - 59))
+    ((h++))
+    echo hour: $h
+fi
+done
+exit 0
