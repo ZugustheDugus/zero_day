@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
-##This code will print i until it increments to the first hour, then it will reset the minutes and repeat until hour 12 is reached
+#This code will print i until it increments to the first hour, then it will reset the minutes and repeat until hour 12 is reached
 i=1
 h=0
-echo hour: $h
-while [ $i -lt 60 ] && [ $h -lt 12 ]
+while [ $h -le 12 ]
 do
-echo $i
-((i++))
-if [ $i -eq 60 ]
-then
-    i=$((i - 59))
+    echo "Hour: $h"
+    while [ $i -le 59 ]
+    do
+	echo "$i"
+	((i++))
+    done
     ((h++))
-    echo hour: $h
-fi
+    i=1
 done
-exit 0
