@@ -6,20 +6,21 @@ while [ $i -le 100 ]
 do
     f=$(( i % 3 ))
     b=$(( i % 5 ))
-    
+
     if [ $f -eq 0 ] && [ $b -eq 0 ]
     then
 	echo "FizzBuzz"
     elif [ $f -eq 0 ]
-	 then
-	 echo "Buzz"
+    then
+	echo "Fizz"
     elif [ $b -eq 0 ]
-	 then
-	 echo "Buzz"
+    then
+	echo "Buzz"
     else
 	echo "$i"
     fi
-    
-    ((i++))
-done
+
+
+    i=$(( i + 1 ))
+    done
 	 
