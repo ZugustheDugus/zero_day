@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
-##This will print Holberton school 9 times, with Hi being printed on the 9th line
+#This will print Holberton school 10 times, with Hi being printed after the 9th line
 i=0
-while [ $i -le 9 ]
+while [ $i -lt 10 ]
 do
 echo "Holberton School"
-((i++))
 if [ $i == 8 ]
 then
     echo "Hi"
-((i++))
 fi
+((i++))
 done
-exit 0
