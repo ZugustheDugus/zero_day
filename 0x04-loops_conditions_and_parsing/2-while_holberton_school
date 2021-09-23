@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script will print Holberton School 10 times
+##This script will print Holberton School 10 times
 i=0
 while [ $i -le 9 ] 
 do
