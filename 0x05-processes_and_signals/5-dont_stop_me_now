@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This program will kill a program that is currently running
+pgrep "4-to_infinity_and_beyond" | kill -9 "4-to_infinity_and_beyond" 
