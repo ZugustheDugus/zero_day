@@ -8,7 +8,7 @@ echo $i
 ((i++))
 if [ $i -eq 60 ]
 then
-    i=$(($i - 59))
+    i=$((i - 59))
     ((h++))
     echo hour: $h
 fi
