@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+##This will print Holberton school 9 times, with Hi being printed on the 9th line
 i=0
 while [ $i -le 9 ]
 do

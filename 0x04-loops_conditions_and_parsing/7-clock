@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+##This code will print i until it increments to the first hour, then it will reset the minutes and repeat until hour 12 is reached
 i=1
 h=0
 echo hour: $h

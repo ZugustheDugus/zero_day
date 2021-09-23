@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+##This code will print holberton school 8 times with bad luck being printed on the 4th line and good luck printed on the 8th line
 i=0
 while [ $i -le 9 ]
 do

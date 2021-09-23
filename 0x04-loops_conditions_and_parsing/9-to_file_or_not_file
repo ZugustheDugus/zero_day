@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+##This code will check for the existence of a file "holbertonschool" and will make a statment based on if it does or not
 if [ -e holbertonSchool ]
    then
 	echo "holbertonschool file exists"
