@@ -1,21 +1,19 @@
 #!/usr/bin/env bash
-##This code will check for the existence of a file "holbertonschool" and will make a statment based on if it does or not
-if [ -e holbertonSchool ]
+#This code will check for the existence of a file "holbertonschool" and will make a statment based on if it does or not
+if [ -e holbertonschool ]
    then
-	echo "holbertonschool file exists"
+       echo "holbertonschool file exists"
+       if [ -s holbertonschool ]
+       then
+	   echo "holbertonschool file is not empty"
+       else
+	   echo "holbertonschool file is empty"
+       fi
+       if [ -f holbertonschool ]
+       then
+	   echo "holbertonschool file is a regular file"
+	   fi
 	else
 	echo "holbertonschool file does not exist"
+fi
 
-if [ -e holbertonschool ] && [ -s holbertonschool ]
-then
-echo "holbertonschool file is not empty"
-else
-echo "holbertonschool file is empty"
-
-if [ -f holbertonscool ]
-then
-echo "holbertonschool file is a regular file"
-fi
-fi
-fi
-exit 0
