@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#This script will print "to infinity and beyond" indefinitely, with a delay between each printing of the phrase
+i=1
+while [ $i == 1 ]
+do
+echo "To infinity and beyond"
+sleep 2
+done
