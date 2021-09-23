@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #This script will list all processes, displayed in a user format, in a hierarchical manner
-ps -axu
+ps -aux
+
