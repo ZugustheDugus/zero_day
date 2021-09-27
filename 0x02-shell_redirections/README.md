@@ -1,1 +1,0 @@
-Here is the README for the 0x02 folder

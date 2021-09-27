@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#This script will print the bash processes without using the ps command
-pgrep -l bash
