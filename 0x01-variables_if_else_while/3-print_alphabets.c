@@ -4,7 +4,7 @@
  *
  * Return: this is what's supposed to be returned to main
  */
-int main (void)
+int main(void)
 {
 char ch;
 char CH;
