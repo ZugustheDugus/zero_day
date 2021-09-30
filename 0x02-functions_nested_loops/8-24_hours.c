@@ -12,7 +12,7 @@ int ma;
 int mb;
 for (ha = '0' ; ha <= '2' ; ha++)
 {
-for (hb = '0' ; hb <= '3' ; hb++)
+for (hb = '0' ; hb <= '9' ; hb++)
 {
 for (ma = '0' ; ma <= '5' ; ma++)
 {
@@ -26,6 +26,10 @@ _putchar(mb);
 _putchar('\n');
 }
 }
+if (ha == '2' && hb == '3')
+{
+break;
+}      
 }
 }
 }
