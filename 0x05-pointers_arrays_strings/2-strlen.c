@@ -3,12 +3,13 @@
 /**
  * _strlen - check the code
  * Return: Returns the strlen
- * @str: pointer to *str
+ * @s: pointer to *str
  */
 
-int _strlen(char *str)
+int _strlen(char *s)
 {
-int i;
-i = *str;
+char i;
+i = *s;
+s++;
 return (i);
 }
