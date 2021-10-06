@@ -11,10 +11,13 @@ while (*str)
 {
 putchar(*str);
 str++;
-str++;
 if (*str == '\0')
 {
 break;
+}
+else
+{
+str++;
 }
 }
 putchar('\n');
