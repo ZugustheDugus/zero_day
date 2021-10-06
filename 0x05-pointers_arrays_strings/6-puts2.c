@@ -12,6 +12,10 @@ while (*str)
 putchar(*str);
 str++;
 str++;
+if (*str == '\0')
+{
+break;
+}
 }
 putchar('\n');
 }
