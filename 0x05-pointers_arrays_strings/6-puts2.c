@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * puts2 - function called in the main
  *
- * Return: Always 0.
+ * @str: pointer to the string in the main function
  */
 void puts2(char *str)
 {
@@ -15,4 +15,3 @@ str++;
 }
 putchar('\n');
 }
-  
