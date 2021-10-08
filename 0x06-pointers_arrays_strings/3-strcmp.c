@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _strcmp - Function to compare the length of two strings
  *
- * Return: Always 0.
+ * @s1: The first string
+ * @s2: The second string
+ * Return: Subtract the strings and print a number that indicates relative size
  */
 
 int _strcmp(char *s1, char *s2)
