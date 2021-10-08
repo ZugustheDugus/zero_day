@@ -1,0 +1,1 @@
+This is the README of the 0x06 pointer project
