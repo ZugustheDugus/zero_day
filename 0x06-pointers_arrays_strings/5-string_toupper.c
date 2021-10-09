@@ -6,26 +6,26 @@
  * Return: Always 0.
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-int i;
-char s[100];
+int i = 0;
+int j;
 
-for (i = 0 ; s[i] != '\0'; i++)
-{
-if (s[i] >= 'a' && s[i] <= 'z')
-{
-s[i] = s[i] - 32;
-}
-else if (s[i] >= 'A' && s[i] <= 'Z')
-{
-s[i] = s[i] + 32;
-}
-else
-{
-break;
-}
-}
-printf("%s", s);
+ while (s[i] != '\0')
+   {
+     i++;
+   }
+ i--;
+ for (j = 0; j < i; j++)
+ {
+   if (s[j] >= 65 && s[j] <= 90)
+     {
+   s[j] = s[j] + 32;
+     }
+   else if (s[j] >= 97 && s[j] <= 122)
+     {
+       s[j] = s[j] - 32;
+     }
+ }   
 return (0);
 }
