@@ -1,27 +1,26 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * leet - Converts chars in array a to chars in array b when detected
+ * @s: String assigned to s and pointed to in the main.c
+ * Return: Returns the value of the string
  */
 
-char *leet(char *)
+char *leet(char *s)
 {
-  int i = 0, j = 0, t;
-  char n[15] = [a, A, e, E, o, O, t, T, l, T, 4, 3, 0, 7, 1];
+int i, j;
+char a[] = "aAeEoOtTlL";
+char b[] = "4433007711";
 
-  while (s[i])
-    {
-      i++;
-    }
-  i--;
-  for (j = 0 ; j < i ; j++, i--)
-    {
-      s[i] = s[i] - 13
-      if (s[i] == '\0' || s[j] == '\0')
-	{
-	  break;
-	}
-    }
+for (i = 0 ; s[i] ; i++)
+{
+for (j = 0 ; j <= 9 ; j++)
+{
+if (a[j] == s[i])
+{
+s[i] = b[j];
+}
+}
+}
+return (s);
 }
