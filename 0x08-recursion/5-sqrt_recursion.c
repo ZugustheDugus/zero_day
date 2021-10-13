@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _sqrt_recursion - take the square root of a number recursively 
+ * @n: Number getting its root taken
+ * Return: Returns either an error or the square root of n
+ */
+
+int _sqrt_recursion(int n)
+{
+  if (n <= 0)
+    {
+      return (-1);
+    }
+  else
+    {
+      return (
+    }
+}
