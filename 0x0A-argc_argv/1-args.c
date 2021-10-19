@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - function which passes arguments
@@ -8,8 +7,7 @@
  * Return: Always returns success
  */
 
-int main(int argc, char *argv[])
+void main(int argc)
 {
-printf("argc = %d\n", argc);
-return (0);
+_putchar(argc);
 }
