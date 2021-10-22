@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - main function printing itself
@@ -8,7 +9,6 @@
 
 int main(void)
 {
-printf("%s", __FILE__);
-putchar('\n');
+printf("%s\n", __FILE__);
 return (0);
 }
