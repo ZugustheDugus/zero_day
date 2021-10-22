@@ -1,9 +1,9 @@
 #ifndef ABS(x)
-#define ABS(x) ((x < 0) ? (-x) : (x))
+#define ABS(x)
 
 /**
- * main - main file to return absolute value
- *
+ * ABS - Macro to get the abs value of an integer
+ * @x: integer to get abs value of
  * Return: Returns the absolute value of the main function, user defined
  */
 
