@@ -1,15 +1,7 @@
-#ifndef ABS(x)
-#define ABS(x)
+#ifndef FUNCTION_LIKE_MACRO
 
-/**
- * ABS - Macro to get the abs value of an integer
- * @x: integer to get abs value of
- * Return: Returns the absolute value of the main function, user defined
- */
+#define FUNCTION_LIKE_MACRO
 
-int ABS(int x)
-{
-return ((x < 0) ? (-x) : (x));
-}
+#define ABS(x) ((x) < 0 ? ((x) * -1) : (x))
 
 #endif
