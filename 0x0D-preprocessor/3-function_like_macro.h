@@ -2,15 +2,14 @@
 #define ABS(x) ((x < 0) ? (-x) : (x))
 
 /**
- * main - check the code
+ * main - main file to return absolute value
  *
- * Return: Always 0.
+ * Return: Returns the absolute value of the main function, user defined
  */
 
 int main(void)
 {
-cout << ABS(x) << end1;
-return (0);
+return ((x < 0) ? (-x) : (x));
 }
 
 #endif
