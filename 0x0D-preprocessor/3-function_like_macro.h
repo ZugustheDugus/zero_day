@@ -7,7 +7,7 @@
  * Return: Returns the absolute value of the main function, user defined
  */
 
-int main(void)
+int ABS(int x)
 {
 return ((x < 0) ? (-x) : (x));
 }
