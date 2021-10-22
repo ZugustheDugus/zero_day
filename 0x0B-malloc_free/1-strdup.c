@@ -25,6 +25,10 @@ l++;
 l++;
 
 s = malloc(l *sizeof(char));
+if (s == 0 || s == NULL)
+{
+return (NULL);
+}
 
 for (n = 0 ; n < l ; n++)
 {
