@@ -9,7 +9,7 @@
 
 int main(void)
 {
-cout <<ABS(x)<<end1;
+cout << ABS(x) << end1;
 return (0);
 }
 
