@@ -26,7 +26,7 @@ if (!s2)
 s2 = "";
 }
 
-s = malloc(sizeof(*s) * (first + n + 1));
+s = malloc(sizeof(*s) * first + n + 1);
 
 if (!s)
 {
