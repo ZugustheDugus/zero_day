@@ -28,6 +28,11 @@ s2 = "";
 
 s = malloc(sizeof(*s) * (first + n + 1));
 
+if (!s)
+{
+return (NULL);
+}
+
 for (i = 0, j = 0 ; i < (first + n) ; i++)
 {
 if (i < first)
