@@ -19,11 +19,11 @@ unsigned int i, j, first = strlen(s1);
 
 if (s1 == 0 || s1 == NULL)
 {
-s1 = '\0';
+s1 = "";
 }
 if (s2 == 0 || s2 == NULL)
 {
-s2 = '\0';
+s2 = "";
 }
 
 s = malloc(sizeof(*s) * (first + n + 1));
