@@ -20,5 +20,9 @@ return (s + i);
 }
 i++;
 }
+if (s[i] == c && c == '\0')
+{
+return (s + i);
+}
 return (0);
 }
