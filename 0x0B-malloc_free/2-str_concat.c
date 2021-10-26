@@ -14,13 +14,13 @@ char *str_concat(char *s1, char *s2)
 {
 unsigned int i = 0;
 char *s;
-if (s1 == 0 || s1 == NULL)
+if (s1 == NULL)
 {
-return (NULL);
+s1 = "";
 }
-else if (s2 == 0 || s2 == NULL)
+else if (s2 == NULL)
 {
-return (NULL);
+s2 = "";
 }
 
 s = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
