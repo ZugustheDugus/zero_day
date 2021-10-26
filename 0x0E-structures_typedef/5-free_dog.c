@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * free_dog - frees memory allocated to dog_t
+ * @d: variable for storing the values of dog_t
+ * Return: Returns NULL if nothing in d
  */
 
 void free_dog(dog_t *d)
