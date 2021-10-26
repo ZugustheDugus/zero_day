@@ -1,13 +1,18 @@
-#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - function which passes arguments
- * @argc: argument to which is number of arguments
- * @argv: argument which is char argument
- * Return: Always returns success
+ * main - The main function
+ * @argc: the number of arguments made
+ * @argv: the array of arguments made (numbered 0+)
+ * Return: returns success
  */
 
-void main(int argc)
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-_putchar(argc);
+if (argc > 0)
+{
+printf("%d\n", argc - 1);
+}
+return (0);
 }
