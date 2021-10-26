@@ -28,7 +28,7 @@ return (NULL);
 
 if (owner == NULL)
 return (NULL);
- 
+
 newdog->name = name;
 newdog->age = age;
 newdog->owner = owner;
