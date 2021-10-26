@@ -16,6 +16,11 @@ int **k;
 
 k = (int **)malloc(height * sizeof(int *));
 
+if (k == NULL)
+{
+return (NULL);
+}
+
 if (height <= 0 || width <= 0)
 {
 free(k);
