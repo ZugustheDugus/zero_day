@@ -71,9 +71,8 @@ while (str[l])
 {
 l++;
 }
-l++;
 
-s = malloc(l *sizeof(char));
+s = malloc(l *sizeof(char) + 1);
 if (s == 0 || s == NULL)
 {
 return (NULL);
