@@ -45,7 +45,9 @@ return (NULL);
 newdog->name = _strdup(name);
 newdog->owner = _strdup(owner);
 
+newdog->name = name;
 newdog->age = age;
+newdog->owner = owner;
 
 return (newdog);
 
