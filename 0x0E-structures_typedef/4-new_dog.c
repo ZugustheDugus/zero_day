@@ -83,6 +83,6 @@ for (n = 0 ; n < l ; n++)
 {
 s[n] = str[n];
 }
-s[n] = '\0';
+
 return (s);
 }
