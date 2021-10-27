@@ -45,9 +45,7 @@ return (NULL);
 newdog->name = _strdup(name);
 newdog->owner = _strdup(owner);
 
-newdog->name = name;
 newdog->age = age;
-newdog->owner = owner;
 
 return (newdog);
 
@@ -85,5 +83,6 @@ for (n = 0 ; n < l ; n++)
 {
 s[n] = str[n];
 }
+s[n] = '\0';
 return (s);
 }
