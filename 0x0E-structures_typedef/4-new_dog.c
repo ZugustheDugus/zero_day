@@ -18,30 +18,6 @@ dog_t *newdog;
 
 newdog = malloc(sizeof(dog_t));
 
-if (newdog == NULL)
-{
-free(newdog);
-return (NULL);
-}
-
-if (name == NULL)
-{
-free(newdog);
-return (NULL);
-}
-
-if (age == '\0')
-{
-free(newdog);
-return (NULL);
-}
-
-if (owner == NULL)
-{
-free(newdog);
-return (NULL);
-}
-
 newdog->name = _strdup(name);
 newdog->owner = _strdup(owner);
 
