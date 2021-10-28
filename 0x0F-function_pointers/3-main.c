@@ -3,9 +3,10 @@
 #include "3-calc.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - main func passing arguments to make a calculator
+ * @argc: no. of args
+ * @argv: each argument, indexed in an array
+ * Return: returns success
  */
 
 int main(int argc, char *argv[])
