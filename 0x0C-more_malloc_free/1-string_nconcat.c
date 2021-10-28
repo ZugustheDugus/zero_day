@@ -3,44 +3,44 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 /**
- * string_nconcat -  concatenates two strings upto n bytes
- * @s1: first string
- * @s2: second string
- * @n: bytes to concatenate
- * 
- * Return: pointer to new string or NULL if fail
+ * string_nconcat - concatenates two strings for n bytes
+ * @n: number of bytes to concatenate
+ * @s1: Primary string being added to
+ * @s2: Second string being added to Primary for n bytes
+ * Return: Returns the string after concatenation
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j, s1Len = strlen(s1);
-char *ptr;
+
+char *s;
+unsigned int i, j, first = strlen(s1);
 
 if (!s1)
+{
 s1 = "";
+}
 if (!s2)
+{
 s2 = "";
+}
 
-ptr = malloc(sizeof(*ptr) * s1Len + n + 1);
+s = malloc(sizeof(*s) * first + n + 1);
 
-if (!ptr)
+if (!s)
 return (NULL);
 
-for (i = 0, j = 0; i < (s1Len + n); i++)
+for (i = 0, j = 0; i < (first + n); i++)
 {
-if (i < s1Len)
-{
-ptr[i] = s1[i];
-}
+
+if (i < first)
+s[i] = s1[i];
+
 else
-{
-ptr[i] = s2[j++];
-}
+s[i] = s2[j++];
 
 }
-
-ptr[i] = '\0';
-return (ptr);
+i++;
+return (s);
 }
