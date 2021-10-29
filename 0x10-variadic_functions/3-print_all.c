@@ -16,6 +16,7 @@ void print_all(const char * const format, ...)
 	double d;
 	va_list zug;
 	int len, index;
+
 	len = (strlen(format) - 1);
 	index = 0;
 	va_start(zug, format);
@@ -26,7 +27,7 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			i = va_arg(zug, int);
-			_putchar(i);
+			putchar(i);
 			break;
 		case 'i':
 			i = va_arg(zug, int);
