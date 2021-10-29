@@ -3,9 +3,9 @@
 #include "variadic_functions.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_numbers - prints numbers from main file w/ separator
+ * @n: number of arguments
+ * @separator: separator string between numbers
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -20,7 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", va_arg(s, int));
 		if (i < (n - 1))
 			{
-				printf("%s", separator);
+			printf("%s", separator);
 			}
 	}
 	printf("\n");
