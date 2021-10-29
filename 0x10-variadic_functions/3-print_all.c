@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			i = va_arg(zug, int);
-			putchar(i);
+			_putchar(i);
 			break;
 		case 'i':
 			i = va_arg(zug, int);
@@ -44,6 +44,10 @@ void print_all(const char * const format, ...)
 		if (index < len && (*t == 'i' || *t == 'c' || *t == 'f' || *t == 's'))
 		{
 			printf(", ");
+			if (s == NULL)
+			{
+				printf("(nil)");
+			}
 		}
 		index++;
 		t++;
