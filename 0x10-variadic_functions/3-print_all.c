@@ -44,10 +44,6 @@ void print_all(const char * const format, ...)
 		if (index < len && (*t == 'i' || *t == 'c' || *t == 'f' || *t == 's'))
 		{
 			printf(", ");
-			if (s == NULL)
-			{
-				printf("(nil)");
-			}
 		}
 		index++;
 		t++;
