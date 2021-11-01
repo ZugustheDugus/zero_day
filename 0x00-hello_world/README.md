@@ -1,1 +1,0 @@
-This is the README for the 0x00-hello_world project, using the C programming language in basic exercises
