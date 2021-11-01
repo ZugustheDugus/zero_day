@@ -1,7 +1,1 @@
-Here is the README file for the holberton-system_engineering-devops repository
-
-Contents are:
-
-0x00-shell_basics exercise
-
-0x01-shell_permissions exercise
+This is a project to manually recreate the printf function with the use of some macros and no builtins
