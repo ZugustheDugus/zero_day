@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - main function to multiply two arguments
+ * @argc: Count of arguments
+ * @argv: indexer of specific arguments
+ * Return: Returns success
+ */
+
+int main(int argc, char *argv[])
+{
+int i, j, res;
+
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
+}
+
+i = atoi(argv[1]);
+j = atoi(argv[2]);
+
+res = (i * j);
+printf("%d\n", res);
+
+return (0);
+}

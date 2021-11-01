@@ -1,0 +1,41 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * create_array - creates an array of chars
+ * @c: the address of memory to print
+ * @size: the size of the memory to print
+ *
+ * Return: the string through a whole array
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+
+  char *s;
+  unsigned int i;
+
+  if (s1 == 0 || s1 == NULL)
+    {
+      return (NULL);
+    }
+  if (s2 == 0 || s2 == NULL)
+    {
+      return (NULL);
+    }
+  
+  s = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+  i = 0;
+  while (s[i] != '\0')
+    {
+      i++;
+    }
+  i++;
+
+  for (i = 0 ; i < n ; n++)
+    {
+      s[i] = c;
+    }
+  return (s);
+}
